@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Paginação</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+  }
+
+  .bloco {
+    margin-bottom: 40px;
+  }
+
+  .pagination {
+    display: inline-flex;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    overflow: hidden;
+  }
+
+  .pagination a {
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #007bff;
+    border-right: 1px solid #ccc;
+  }
+
+  .pagination a:last-child {
+    border-right: none;
+  }
+
+  /* Apenas o segundo terá hover */
+  .hover a {
+    transition: 0.3s;
+  }
+
+  .hover a:hover {
+    background-color: #e0e0e0;
+    color: #000;
+    font-weight: bold;
+  }
+</style>
+</head>
+<body>
+<h1>Exemplo de Paginação</h1>
+<p>Fórum temático 03.</p>
+<div class="bloco">
+  <h3>Normal</h3>
+  <div class="pagination">
+    <a href="#">«</a>
+    <a href="#">1</a>
+    <a href="#">2</a>
+    <a href="#">3</a>
+    <a href="#">»</a>
+  </div>
+</div>
+
+<div class="bloco">
+  <h3>Quando passar o mouse</h3>
+  <div class="pagination hover">
+    <a href="#">«</a>
+    <a href="#">1</a>
+    <a href="#">2</a>
+    <a href="#">3</a>
+    <a href="#">»</a>
+  </div>
+</div>
+
+</body>
+</html>
